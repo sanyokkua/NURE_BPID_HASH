@@ -1,12 +1,9 @@
 package ua.nure.bpid.hash.Sum;
 
-/**
- * Created by Александр on 02.05.2015.
- */
 public class FAQ6HashSum implements HashSum {
 
     @Override
-    public long Hash(byte[] source) {
+    public long hash(byte[] source) {
         long hash = 0;
         for (byte b : source) {
             hash += b;

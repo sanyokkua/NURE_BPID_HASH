@@ -1,20 +1,23 @@
 package ua.nure.bpid.hash.Functions;
 
-/**
- * Created by Александр on 02.05.2015.
- */
 public class PearsonHash implements HashFunction {
     @Override
     public int[] hash(byte[] source) {
         int[] hash = new int[8];
         for (int j = 0; j < 8; j++) {
-            int h = T[(source[0] + j) % 256];
+            int outerIndex = (getABS(source[0]) + j) % 256;
+            int h = T[outerIndex];
             for (int i = 1; i < source.length; i++) {
-                h = T[h ^ source[i]];
+                int innerIndex = h ^ getABS(source[i]);
+                h = T[innerIndex];
             }
             hash[j] = h;
         }
         return hash;
+    }
+
+    private int getABS(int index) {
+        return index < 0 ? -index : index;
     }
 
     private static final int[] T = {
