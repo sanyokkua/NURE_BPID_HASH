@@ -1,5 +1,6 @@
 package ua.nure.bpid.hash.Sum;
 
+
 public class FAQ6HashSum implements HashSum {
 
     @Override
@@ -8,10 +9,10 @@ public class FAQ6HashSum implements HashSum {
         for (byte b : source) {
             hash += b;
             hash += (hash << 10);
-            hash ^= (hash >> 6);
+            hash ^= (hash >>> 6);
         }
         hash += (hash << 3);
-        hash ^= (hash >> 11);
+        hash ^= (hash >>> 11);
         hash += (hash << 15);
         return hash;
     }
