@@ -1,6 +1,6 @@
 package ua.nure.bpid.hash;
 
-import ua.nure.bpid.hash.GUI.MainWindow;
+import ua.nure.bpid.hash.gui.MainWindow;
 
 public class Main {
 

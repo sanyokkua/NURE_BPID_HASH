@@ -1,4 +1,4 @@
-package ua.nure.bpid.hash.Sum;
+package ua.nure.bpid.hash.sum;
 
 
 public class FAQ6HashSum implements HashSum {

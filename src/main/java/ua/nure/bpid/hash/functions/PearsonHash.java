@@ -1,25 +1,6 @@
-package ua.nure.bpid.hash.Functions;
+package ua.nure.bpid.hash.functions;
 
 public class PearsonHash implements HashFunction {
-    @Override
-    public int[] hash(byte[] source) {
-        int[] hash = new int[8];
-        for (int j = 0; j < 8; j++) {
-            int outerIndex = (getABS(source[0]) + j) % 256;
-            int h = T[outerIndex];
-            for (int i = 1; i < source.length; i++) {
-                int innerIndex = h ^ getABS(source[i]);
-                h = T[innerIndex];
-            }
-            hash[j] = h;
-        }
-        return hash;
-    }
-
-    private int getABS(int index) {
-        return index < 0 ? -index : index;
-    }
-
     private static final int[] T = {
             98, 6, 85, 150, 36, 23, 112, 164, 135, 207, 169, 5, 26, 64, 165, 219,
             61, 20, 68, 89, 130, 63, 52, 102, 24, 229, 132, 245, 80, 216, 195, 115,
@@ -38,4 +19,23 @@ public class PearsonHash implements HashFunction {
             238, 87, 240, 155, 180, 170, 242, 212, 191, 163, 78, 218, 137, 194, 175, 110,
             43, 119, 224, 71, 122, 142, 42, 160, 104, 48, 247, 103, 15, 11, 138, 239
     };
+
+    @Override
+    public int[] hash(byte[] source) {
+        int[] hash = new int[8];
+        for (int j = 0; j < 8; j++) {
+            int outerIndex = (getABS(source[0]) + j) % 256;
+            int h = T[outerIndex];
+            for (int i = 1; i < source.length; i++) {
+                int innerIndex = h ^ getABS(source[i]);
+                h = T[innerIndex];
+            }
+            hash[j] = h;
+        }
+        return hash;
+    }
+
+    private int getABS(int index) {
+        return index < 0 ? -index : index;
+    }
 }

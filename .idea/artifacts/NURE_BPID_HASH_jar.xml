@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="NURE_BPID_HASH:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/NURE_BPID_HASH_jar</output-path>
-    <root id="archive" name="NURE_BPID_HASH.jar">
-      <element id="module-output" name="NURE_BPID_HASH" />
-    </root>
-  </artifact>
-</component>
