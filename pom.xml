@@ -16,7 +16,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ua.nure.bpid.hash.Main</mainClass>
+                            <mainClass>com.kostenko.hash.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -51,7 +51,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>ua.nure.bpid.hash.Main</mainClass>
+                            <mainClass>com.kostenko.hash.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

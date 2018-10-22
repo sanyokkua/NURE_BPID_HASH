@@ -1,6 +1,6 @@
-package ua.nure.bpid.hash;
+package com.kostenko.hash;
 
-import ua.nure.bpid.hash.gui.MainWindow;
+import com.kostenko.hash.gui.MainWindow;
 
 public class Main {
 

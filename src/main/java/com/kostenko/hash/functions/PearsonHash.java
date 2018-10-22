@@ -1,4 +1,4 @@
-package ua.nure.bpid.hash.functions;
+package com.kostenko.hash.functions;
 
 public class PearsonHash implements HashFunction {
     private static final int[] T = {

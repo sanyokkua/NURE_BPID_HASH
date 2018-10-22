@@ -1,4 +1,4 @@
-package ua.nure.bpid.hash.sum;
+package com.kostenko.hash.sum;
 
 public class LRCHashSum implements HashSum {
     @Override

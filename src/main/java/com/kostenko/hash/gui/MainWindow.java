@@ -1,10 +1,10 @@
-package ua.nure.bpid.hash.gui;
+package com.kostenko.hash.gui;
 
-import ua.nure.bpid.hash.functions.HashFunction;
-import ua.nure.bpid.hash.functions.PearsonHash;
-import ua.nure.bpid.hash.sum.FAQ6HashSum;
-import ua.nure.bpid.hash.sum.HashSum;
-import ua.nure.bpid.hash.sum.LRCHashSum;
+import com.kostenko.hash.functions.HashFunction;
+import com.kostenko.hash.functions.PearsonHash;
+import com.kostenko.hash.sum.HashSum;
+import com.kostenko.hash.sum.LRCHashSum;
+import com.kostenko.hash.sum.FAQ6HashSum;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

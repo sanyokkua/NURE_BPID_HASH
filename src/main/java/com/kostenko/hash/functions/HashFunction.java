@@ -1,4 +1,4 @@
-package ua.nure.bpid.hash.functions;
+package com.kostenko.hash.functions;
 
 public interface HashFunction {
     int[] hash(byte[] source);
